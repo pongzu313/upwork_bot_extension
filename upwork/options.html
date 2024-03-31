@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Options</title>
+    <link rel="stylesheet" type="text/css" href="options.css" />
+  </head>
+  <body>
+    <div id="options-container">
+      <header>
+        <h1>Upwork Profile Setting</h1>
+      </header>
+      <div class="content">
+        <div class="form-container">
+          <form id="profile-form">
+            <input
+              type="text"
+              id="profile-name"
+              placeholder="Profile Name"
+              required
+            />
+            <input
+              type="text"
+              id="profile-title"
+              placeholder="Profile Title"
+              required
+            />
+            <input
+              type="file"
+              id="profile-skills"
+              placeholder="Profile
+            Skills"
+              accept=".json"
+              required
+            />
+            <textarea
+              id="profile-summary"
+              placeholder="Profile Summary"
+              required
+            ></textarea>
+            <input
+              type="text"
+              id="profile-rate"
+              placeholder="Profile Rate"
+              required
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="table-container">
+          <table id="profile-table">
+            <tr>
+              <th>Profile Name</th>
+              <th>Profile Title</th>
+              <th>Profile Skills</th>
+              <th>Profile Summary</th>
+              <th>Profile Rate</th>
+              <th>Actions</th>
+            </tr>
+            <!-- Profile rows will be populated here -->
+          </table>
+        </div>
+        <div style="display: flex; justify-content: flex-end">
+          <button id="import" class="setting_button">Import</button>
+          <button id="export" class="setting_button">Export</button>
+        </div>
+      </div>
+    </div>
+
+    <input
+      type="file"
+      id="import-file"
+      accept="application/json"
+      style="display: none"
+    />
+    <script src="options.js"></script>
+  </body>
+</html>

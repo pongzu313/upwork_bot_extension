@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  width: 200px;
+}
+
+h3 {
+  color: #444;
+  font-weight: normal;
+}
+
+ul#profilesList {
+  list-style-type: none;
+  padding: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+ul#profilesList li.selected {
+  background-color: #b3dcff;
+}
+
+ul#profilesList li {
+  padding: 6px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  color: #333;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+ul#profilesList li:last-child {
+  border-bottom: none;
+}
+
+ul#profilesList li input[type="radio"] {
+  margin-right: 10px;
+}
+
+ul#profilesList li:hover {
+  background-color: #f1f1f1;
+}
+
+ul#profilesList li label {
+  color: #333;
+  font-weight: bold;
+}
+
+button {
+  width: 90px;
+  background-color: #008cba;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+  max-height: 35px;
+}
